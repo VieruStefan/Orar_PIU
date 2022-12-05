@@ -22,17 +22,62 @@ class MainWindow(QWidget):
         self.setBaseSize(1400, 450)
 
         self.hbox = QHBoxLayout()
-        self.table_1 = TableWidget(anul_1, "Anul 1")
-        self.table_2 = TableWidget(anul_2, "Anul 2")
-        self.table_3 = TableWidget(anul_3, "Anul 3")
-        self.table_4 = TableWidget(anul_4, "Anul 4")
-        self.tab_widget = TabWidget()
+
+        self.table_luni_anul_1 = TableWidget(anul_1, "Luni")
+        self.table_luni_anul_2 = TableWidget(anul_2, "Luni")
+        self.table_luni_anul_3 = TableWidget(anul_3, "Luni")
+        self.table_luni_anul_4 = TableWidget(anul_4, "Luni")
+
+        self.table_marti_anul_1 = TableWidget(anul_1, "Marti")
+        self.table_marti_anul_2 = TableWidget(anul_2, "Marti")
+        self.table_marti_anul_3 = TableWidget(anul_3, "Marti")
+        self.table_marti_anul_4 = TableWidget(anul_4, "Marti")
+
+        self.table_miercuri_anul_1 = TableWidget(anul_1, "Miercuri")
+        self.table_miercuri_anul_2 = TableWidget(anul_2, "Miercuri")
+        self.table_miercuri_anul_3 = TableWidget(anul_3, "Miercuri")
+        self.table_miercuri_anul_4 = TableWidget(anul_4, "Miercuri")
+
+        self.table_joi_anul_1 = TableWidget(anul_1, "Joi")
+        self.table_joi_anul_2 = TableWidget(anul_2, "Joi")
+        self.table_joi_anul_3 = TableWidget(anul_3, "Joi")
+        self.table_joi_anul_4 = TableWidget(anul_4, "Joi")
+
+        self.table_vineri_anul_1 = TableWidget(anul_1, "Vineri")
+        self.table_vineri_anul_2 = TableWidget(anul_2, "Vineri")
+        self.table_vineri_anul_3 = TableWidget(anul_3, "Vineri")
+        self.table_vineri_anul_4 = TableWidget(anul_4, "Vineri")
+
+        self.ani_tab = QTabWidget()
+        self.anul_1_tab = TabWidget()
+        self.anul_2_tab = TabWidget()
+        self.anul_3_tab = TabWidget()
+        self.anul_4_tab = TabWidget()
+
+        self.anul_1_tab.insert_tabs([self.table_luni_anul_1, self.table_marti_anul_1,
+                                     self.table_miercuri_anul_1, self.table_joi_anul_1,
+                                     self.table_vineri_anul_1])
+
+        self.anul_2_tab.insert_tabs([self.table_luni_anul_2, self.table_marti_anul_2,
+                                     self.table_miercuri_anul_2, self.table_joi_anul_2,
+                                     self.table_vineri_anul_2])
+
+        self.anul_3_tab.insert_tabs([self.table_luni_anul_3, self.table_marti_anul_3,
+                                     self.table_miercuri_anul_3, self.table_joi_anul_3,
+                                     self.table_vineri_anul_3])
+
+        self.anul_4_tab.insert_tabs([self.table_luni_anul_4, self.table_marti_anul_4,
+                                     self.table_miercuri_anul_4, self.table_joi_anul_4,
+                                     self.table_vineri_anul_4])
+
+        self.ani_tab.addTab(self.anul_1_tab, "Anul 1")
+        self.ani_tab.addTab(self.anul_2_tab, "Anul 2")
+        self.ani_tab.addTab(self.anul_3_tab, "Anul 3")
+        self.ani_tab.addTab(self.anul_4_tab, "Anul 4")
+
         self.control_panel = ControlPanel()
 
-        self.tab_widget.insert_tabs([self.table_1, self.table_2, self.table_3, self.table_4])
-        self.calendar = QCalendarWidget()
-
-        self.hbox.addWidget(self.tab_widget)
+        self.hbox.addWidget(self.ani_tab)
         self.hbox.addWidget(self.control_panel)
         self.setLayout(self.hbox)
         self.show()

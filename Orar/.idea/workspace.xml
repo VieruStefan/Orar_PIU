@@ -4,31 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bab9c7c6-5ce6-41ae-b2eb-76a452dcaf32" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../AndroidStudioProjects/Lab_03/RoomWordSample/app/src/main/java/com/example/roomwordsample/NewWordActivity.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../AndroidStudioProjects/Lab_03/RoomWordSample/app/src/main/res/layout/activity_new_word.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../AndroidStudioProjects/Lab_03/RoomWordSample/app/src/main/res/layout/content_main.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interface/ControlPanel.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interface/MainWindow.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interface/TabWidget.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interface/TableWidget.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interface/main_ui.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../POS/Spotify/src/main/java/com/pos/spotify/component/ArtistModelAssembler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../POS/Spotify/src/main/java/com/pos/spotify/component/RecordModelAssembler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../POS/Spotify/src/main/java/com/pos/spotify/controller/ArtistController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../POS/Spotify/src/main/java/com/pos/spotify/controller/ArtistController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../POS/Spotify/src/main/java/com/pos/spotify/controller/PortfolioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../POS/Spotify/src/main/java/com/pos/spotify/controller/PortfolioController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../POS/Spotify/src/main/java/com/pos/spotify/controller/RecordController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../POS/Spotify/src/main/java/com/pos/spotify/controller/RecordController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../POS/Spotify/src/main/java/com/pos/spotify/entity/ArtistPortfolio.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../POS/Spotify/src/main/java/com/pos/spotify/entity/ArtistPortfolio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../POS/Spotify/src/main/java/com/pos/spotify/entity/Artists.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../POS/Spotify/src/main/java/com/pos/spotify/entity/Artist.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../POS/Spotify/src/main/java/com/pos/spotify/entity/Records.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../POS/Spotify/src/main/java/com/pos/spotify/entity/Record.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../POS/Spotify/src/main/java/com/pos/spotify/repository/ArtistRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../POS/Spotify/src/main/java/com/pos/spotify/repository/ArtistRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../POS/Spotify/src/main/java/com/pos/spotify/repository/RecordRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../POS/Spotify/src/main/java/com/pos/spotify/repository/RecordRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../POS/Spotify/src/main/java/com/pos/spotify/service/ArtistPortfolioService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../POS/Spotify/src/main/java/com/pos/spotify/service/ArtistPortfolioService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../POS/Spotify/src/main/java/com/pos/spotify/service/ArtistPortfolioServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../POS/Spotify/src/main/java/com/pos/spotify/service/ArtistPortfolioServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../POS/Spotify/src/main/java/com/pos/spotify/service/ArtistService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../POS/Spotify/src/main/java/com/pos/spotify/service/ArtistService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../POS/Spotify/src/main/java/com/pos/spotify/service/ArtistServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../POS/Spotify/src/main/java/com/pos/spotify/service/ArtistServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../POS/Spotify/src/main/java/com/pos/spotify/service/RecordService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../POS/Spotify/src/main/java/com/pos/spotify/service/RecordService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../POS/Spotify/src/main/java/com/pos/spotify/service/RecordServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../POS/Spotify/src/main/java/com/pos/spotify/service/RecordServiceImpl.java" afterDir="false" />
+    <list default="true" id="bab9c7c6-5ce6-41ae-b2eb-76a452dcaf32" name="Changes" comment="--test">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/ControlPanel.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/ControlPanel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/MainWindow.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/MainWindow.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/TabWidget.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/TabWidget.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/TableWidget.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/TableWidget.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +39,12 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/../.." value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -77,7 +64,8 @@
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   },
   &quot;keyToStringList&quot;: {
     &quot;DatabaseDriversLRU&quot;: [
@@ -179,8 +167,20 @@
       <workItem from="1669047119292" duration="5604000" />
       <workItem from="1669104377102" duration="13000" />
       <workItem from="1669652244191" duration="4364000" />
-      <workItem from="1670155779120" duration="12624000" />
+      <workItem from="1670155779120" duration="13159000" />
+      <workItem from="1670249492099" duration="45000" />
+      <workItem from="1670249874096" duration="679000" />
+      <workItem from="1670253163234" duration="2040000" />
+      <workItem from="1670256199187" duration="1726000" />
     </task>
+    <task id="LOCAL-00001" summary="--test">
+      <created>1670176879182</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1670176879182</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -191,16 +191,32 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="test" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="--test" />
+    <option name="LAST_COMMIT_MESSAGE" value="--test" />
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Orar$view.coverage" NAME="view Coverage Results" MODIFIED="1670157710367" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Orar$main.coverage" NAME="main Coverage Results" MODIFIED="1670164785582" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Orar$teacher_orm.coverage" NAME="teacher_orm Coverage Results" MODIFIED="1669026781670" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/database/models" />
-    <SUITE FILE_PATH="coverage/Orar$main__1_.coverage" NAME="main (1) Coverage Results" MODIFIED="1670176137211" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface" />
+    <SUITE FILE_PATH="coverage/Orar$main__1_.coverage" NAME="main (1) Coverage Results" MODIFIED="1670257467880" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface" />
   </component>
 </project>

@@ -8,6 +8,8 @@ class TableWidget(QTableWidget):
         self.name = name
         self.data = data
         self.setData()
+        self.setDragDropMode(QTableWidget.InternalMove)  # Objects can only be drag/dropped internally and are moved instead of copied
+        #self.setDragDropOverwriteMode(False)
         for i in range(len(self.data)): self.setColumnWidth(i, 80)
 
     def setData(self):
