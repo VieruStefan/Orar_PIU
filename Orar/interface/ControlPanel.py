@@ -50,14 +50,11 @@ class ControlPanel(QWidget):
         teacher = None
         for materie in get_subjects():
             if f"{materie.subject_name}" == self.materie.currentText():
-                self.generate_widget.setItem(0, 0, QTableWidgetItem(materie.subject_acronym))
                 subject = materie
                 break
 
         for profesor in get_teachers():
             if f"{profesor.first_name} {profesor.last_name}" == self.profesor.currentText():
-                self.generate_widget.setItem(
-                    1, 0, QTableWidgetItem(f"{profesor.first_name[0]}{profesor.last_name[0]} {self.sala.currentText()}"))
                 teacher = profesor
                 break
 
@@ -72,5 +69,9 @@ class ControlPanel(QWidget):
                                        course_length=2,
                                        course_type=f"laborator")
 
+        # aici se modifica tabelul de generat
+        self.generate_widget.setItem(
+            1, 0, QTableWidgetItem(f"{teacher.first_name[0]}{teacher.last_name[0]} {classroom.classroom_name}"))
+        self.generate_widget.setItem(0, 0, QTableWidgetItem(subject.subject_acronym))
+
         print(self.generated_course.to_string())
-        
