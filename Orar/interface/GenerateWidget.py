@@ -4,7 +4,7 @@ from PyQt5.QtWidgets import QWidget, QTableWidget, QTableView
 class GenerateWidget(QTableWidget):
     def __init__(self):
         QTableWidget.__init__(self, 2, 1)
-        self.setFixedSize(300, 62)
+        self.setFixedSize(280, 62)
         self.verticalHeader().setVisible(False)
         self.horizontalHeader().setVisible(False)
         self.horizontalHeader().setStretchLastSection(True)

@@ -82,10 +82,3 @@ class MainWindow(QWidget):
         self.setLayout(self.hbox)
         self.show()
 
-    def place_tab(self, table):
-        tab = QWidget()
-        vbox = QVBoxLayout()
-        vbox.addWidget(table)
-        tab.setLayout(vbox)
-        self.tab_widget.addTab(tab, table.name)
-
