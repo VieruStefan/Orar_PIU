@@ -3,6 +3,7 @@ from PyQt5.QtWidgets import QMainWindow, QMessageBox, QApplication, QVBoxLayout,
 from interface.MainWindow import MainWindow
 
 if __name__ == "__main__":
+    #test
     app = QApplication(sys.argv)
     win = MainWindow()
     sys.exit(app.exec())
