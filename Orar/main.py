@@ -4,6 +4,7 @@ from interface.MainWindow import MainWindow
 
 if __name__ == "__main__":
     #test
+    #test
     app = QApplication(sys.argv)
     win = MainWindow()
     sys.exit(app.exec())
