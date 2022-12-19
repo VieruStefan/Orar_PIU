@@ -78,6 +78,7 @@ class TableWidget(QTableWidget):
         print(str)
         arr = str.split("\n")
 
+
         d = [json.loads(arr[0]), json.loads(arr[1]), json.loads(arr[2])]
         teacher_id = d[0]["teacher_id"]
         classroom_id = d[1]["classroom_id"]
