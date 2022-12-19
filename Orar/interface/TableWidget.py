@@ -1,4 +1,4 @@
-from PyQt5.QtWidgets import QTableWidget, QVBoxLayout
+from PyQt5.QtWidgets import QTableWidget, QVBoxLayout, QLabel, QWidget
 
 
 class TableWidget(QTableWidget):
@@ -13,6 +13,7 @@ class TableWidget(QTableWidget):
         # self.setDragDropMode(QTableWidget.InternalMove)  # Objects can only be drag/dropped internally and are moved instead of copied
         # self.setDragDropOverwriteMode(False)
         for i in range(len(self.data)): self.setColumnWidth(i, 80)
+        # self.selectionModel().selectionChanged.connect(self.on_data)
 
     def setData(self):
         horizontal_headers = []
@@ -25,3 +26,9 @@ class TableWidget(QTableWidget):
         for i in range(8, 20):
             vertical_headers.append(f"{i}")
         self.setVerticalHeaderLabels(vertical_headers)
+
+    # def on_data(self):
+    #     for item in self.selectedItems():
+    #         item.setText("")
+
+

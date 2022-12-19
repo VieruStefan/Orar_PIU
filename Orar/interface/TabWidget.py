@@ -6,7 +6,10 @@ class TabWidget(QTabWidget):
     def __init__(self):
         QTabWidget.__init__(self)
         self.setFixedSize(1150, 415)
+        #self.tabBarClicked.connect(self.onChange)
 
     def insert_tabs(self, list_tabs):
         for tab in list_tabs:
             self.addTab(tab, tab.name)
+
+
