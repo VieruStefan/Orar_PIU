@@ -8,7 +8,7 @@ def get_subjects():
     return subjects
 
 
-def get_subject(subject_id):
+def get_subject(subject_id) -> Subject:
     session = Session()
     subject = session.get(Subject, subject_id)
     return subject

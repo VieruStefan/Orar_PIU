@@ -8,7 +8,7 @@ def get_classrooms():
     return classrooms
 
 
-def get_classroom(classroom_id):
+def get_classroom(classroom_id) -> Classroom:
     session = Session()
     classroom = session.get(Classroom, classroom_id)
     return classroom

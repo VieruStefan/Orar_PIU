@@ -73,5 +73,7 @@ class ControlPanel(QWidget):
         self.generate_widget.setItem(
             1, 0, QTableWidgetItem(f"{teacher.first_name[0]}{teacher.last_name[0]} {classroom.classroom_name}"))
         self.generate_widget.setItem(0, 0, QTableWidgetItem(subject.subject_acronym))
-
+        self.generate_widget.teacher = teacher
+        self.generate_widget.classroom = classroom
+        self.generate_widget.subject = subject
         print(self.generated_course.to_string())

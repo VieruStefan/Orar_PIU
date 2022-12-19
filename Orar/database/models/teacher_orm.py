@@ -1,9 +1,12 @@
+import json
+
 from sqlalchemy import Column, String, Integer
+from sqlalchemy_serializer import SerializerMixin
 
 from database.base.sql_base import Base
 
 
-class Teacher(Base):
+class Teacher(Base, SerializerMixin):
     __tablename__ = 'teachers'
 
     teacher_id = Column(Integer, primary_key=True, autoincrement=True)

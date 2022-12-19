@@ -8,7 +8,7 @@ def get_teachers():
     return teachers
 
 
-def get_teacher(teacher_id):
+def get_teacher(teacher_id) -> Teacher:
     session = Session()
     teacher = session.get(Teacher, teacher_id)
     return teacher

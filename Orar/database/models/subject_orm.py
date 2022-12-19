@@ -1,9 +1,10 @@
 from sqlalchemy import Column, String, Integer
+from sqlalchemy_serializer import SerializerMixin
 
 from database.base.sql_base import Base
 
 
-class Subject(Base):
+class Subject(Base, SerializerMixin):
     __tablename__ = 'subjects'
 
     subject_id = Column(Integer, primary_key=True)

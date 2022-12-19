@@ -1,9 +1,10 @@
 from sqlalchemy import Column, String, Integer
+from sqlalchemy_serializer import SerializerMixin
 
 from database.base.sql_base import Base
 
 
-class Classroom(Base):
+class Classroom(Base, SerializerMixin):
     __tablename__ = 'classrooms'
 
     classroom_id = Column(Integer, primary_key=True)

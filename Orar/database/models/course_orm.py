@@ -1,4 +1,5 @@
 from sqlalchemy import Column, String, Integer, ForeignKey
+from sqlalchemy_serializer import SerializerMixin
 
 from database.base.sql_base import Base
 from database.repositories.subjects_repository import get_subject
@@ -6,7 +7,7 @@ from database.repositories.teacher_repository import get_teacher
 from database.repositories.classroom_repository import get_classroom
 
 
-class Course(Base):
+class Course(Base, SerializerMixin):
     __tablename__ = 'courses'
 
     subject_id = Column(Integer, ForeignKey("subjects.subject_id"), primary_key=True)
