@@ -42,3 +42,9 @@ def get_classroom_by_name(classroom_name):
         if classroom.__getattribute__("classroom_name") == classroom_name:
             return classroom
     return None
+
+
+def get_classroom_from_dict(d) -> Classroom:
+    classroom = Classroom(d["classroom_name"])
+    classroom.classroom_id = d["classroom_id"]
+    return classroom

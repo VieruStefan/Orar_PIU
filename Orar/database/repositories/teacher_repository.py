@@ -41,7 +41,13 @@ def get_teacher_by_name(name):
     first_name = name.split()[0]
     last_name = name.split()[1]
     for teacher in teachers:
-        if teacher.__getattribute__("first_name") == first_name\
+        if teacher.__getattribute__("first_name") == first_name \
                 and teacher.__getattribute__("last_name") == last_name:
             return teacher
     return None
+
+
+def get_teacher_from_dict(d) -> Teacher:
+    teacher = Teacher(d["first_name"], d["last_name"])
+    teacher.teacher_id = d["teacher_id"]
+    return teacher

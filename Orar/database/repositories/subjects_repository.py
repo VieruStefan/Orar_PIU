@@ -42,3 +42,11 @@ def get_subject_by_acronym(subject_acronym):
         if subject.__getattribute__("subject_acronym") == subject_acronym:
             return subject
     return None
+
+
+def get_subject_from_dict(d) -> Subject:
+    subject = Subject(d["subject_acronym"], d["subject_name"])
+    subject.subject_id = d["subject_id"]
+    return subject
+
+

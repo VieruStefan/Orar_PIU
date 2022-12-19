@@ -5,9 +5,9 @@ from PyQt5.QtCore import QModelIndex, QEvent, QMetaType
 from PyQt5.QtGui import QColor, QDropEvent, QEnterEvent
 from PyQt5.QtWidgets import QTableWidget, QVBoxLayout, QTableWidgetItem, QAbstractItemView
 
-from database.repositories.classroom_repository import get_classroom
-from database.repositories.subjects_repository import get_subject
-from database.repositories.teacher_repository import get_teacher_by_name, get_teacher
+from database.repositories.classroom_repository import get_classroom, get_classroom_from_dict
+from database.repositories.subjects_repository import get_subject, get_subject_from_dict
+from database.repositories.teacher_repository import get_teacher_by_name, get_teacher, get_teacher_from_dict
 
 
 class TableWidget(QTableWidget):
@@ -73,20 +73,13 @@ class TableWidget(QTableWidget):
                 self.item(row, col).setBackground(QColor(255, 255, 255))
 
     def dropMimeData(self, mime: QtCore.QMimeData, action: QtCore.Qt.DropAction, row: int, column: int):
-        str = mime.data("application/json").data().decode("utf-8")
-        str = str.replace("}", "}\n")
-        print(str)
-        arr = str.split("\n")
-
+        arr = mime.data("application/json").data().decode("utf-8").replace("}", "}\n").split("\n")
 
         d = [json.loads(arr[0]), json.loads(arr[1]), json.loads(arr[2])]
-        teacher_id = d[0]["teacher_id"]
-        classroom_id = d[1]["classroom_id"]
-        subject_id = d[2]["subject_id"]
 
-        teacher = get_teacher(f"{teacher_id}")
-        classroom = get_classroom(f"{classroom_id}")
-        subject = get_subject(f"{subject_id}")
+        teacher = get_teacher_from_dict(d[0])
+        classroom = get_classroom_from_dict(d[1])
+        subject = get_subject_from_dict(d[2])
 
         self.item(row, column).setData(0, arr)
         self.item(row, column).setText(f"{subject.subject_acronym}")
