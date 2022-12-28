@@ -15,6 +15,7 @@ def get_courses():
 
 def add_course(teacher_name, subject_acronym, classroom_name, course_length, course_type):
     session = Session()
+    session.expire_on_commit = False
     teacher_id = get_teacher_by_name(teacher_name).teacher_id
     subject_id = get_subject_by_acronym(subject_acronym).subject_id
     classroom_id = get_classroom_by_name(classroom_name).classroom_id

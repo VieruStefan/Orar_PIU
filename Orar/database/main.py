@@ -51,11 +51,16 @@ if __name__ == '__main__':
     recreate()
     add_teacher("Marius", "Gavrilescu")
     add_teacher("Robert", "Lupu")
+    add_teacher("Alexandru", "Archip")
+    add_teacher("Tiberius", "Dumitriu")
     add_subject("PIU", "Proiectarea interfetelor pentru utilizator")
     add_subject("PAOO", "Programarea aplicatiilor orientate obiect")
+    add_subject("POS", "Programare orientata pe servicii")
+    add_subject("EP", "Evaluarea performantelor")
     add_classroom("AC-03")
+    add_classroom("C0-3")
     add_classroom("C2-6")
-    add_course("Robert Lupu", "PAOO", "AC-03", 2, "curs")
+    add_classroom("C2-7")
 
     print(f"\nTeachers:")
     for teacher in get_teachers():
@@ -73,8 +78,8 @@ if __name__ == '__main__':
     for course in get_courses():
         print(course.to_string(), end="\n")
 
-    print(get_subject_by_acronym("PIU"))
-    print(get_teacher_by_name("Robert Lupu"))
-    print(get_teacher_by_name("Robert Lupuu"))
-    print(get_classroom_by_name("AC-03"))
-    print(get_classroom_by_name("C0-3"))
+    # print(get_subject_by_acronym("PIU"))
+    # print(get_teacher_by_name("Robert Lupu"))
+    # print(get_teacher_by_name("Robert Lupuu"))
+    # print(get_classroom_by_name("AC-03"))
+    # print(get_classroom_by_name("C0-3"))
