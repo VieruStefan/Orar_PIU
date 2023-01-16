@@ -1,6 +1,7 @@
 from PyQt5.QtWidgets import QVBoxLayout, QWidget,\
-    QTabWidget, QHBoxLayout, QCalendarWidget
+    QTabWidget, QHBoxLayout, QPushButton
 
+from interface.DeleteWidget import DeleteWidget
 from interface.TableWidget import TableWidget
 from interface.TabWidget import TabWidget
 from interface.ControlPanel import ControlPanel
@@ -77,9 +78,95 @@ class MainWindow(QWidget):
         self.ani_tab.addTab(self.anul_4_tab, "Anul 4")
 
         self.control_panel = ControlPanel()
+        self.delete = DeleteWidget()
 
+        self.delete.clicked.connect(self.delete_selection)
         self.hbox.addWidget(self.ani_tab)
         self.hbox.addWidget(self.control_panel)
+        self.hbox.addWidget(self.delete)
         self.setLayout(self.hbox)
         self.show()
+
+    def delete_selection(self):
+        for item in self.table_luni_anul_1.selectedItems():
+            item.setText("")
+            item.setWhatsThis("")
+
+        for item in self.table_marti_anul_1.selectedItems():
+            item.setText("")
+            item.setWhatsThis("")
+
+        for item in self.table_miercuri_anul_1.selectedItems():
+            item.setText("")
+            item.setWhatsThis("")
+
+        for item in self.table_joi_anul_1.selectedItems():
+            item.setText("")
+            item.setWhatsThis("")
+
+        for item in self.table_vineri_anul_1.selectedItems():
+            item.setText("")
+            item.setWhatsThis("")
+        #  an2
+        for item in self.table_luni_anul_2.selectedItems():
+            item.setText("")
+            item.setWhatsThis("")
+
+        for item in self.table_marti_anul_2.selectedItems():
+            item.setText("")
+            item.setWhatsThis("")
+
+        for item in self.table_miercuri_anul_2.selectedItems():
+            item.setText("")
+            item.setWhatsThis("")
+
+        for item in self.table_joi_anul_2.selectedItems():
+            item.setText("")
+            item.setWhatsThis("")
+
+        for item in self.table_vineri_anul_2.selectedItems():
+            item.setText("")
+            item.setWhatsThis("")
+
+        # an3
+        for item in self.table_luni_anul_3.selectedItems():
+            item.setText("")
+            item.setWhatsThis("")
+
+        for item in self.table_marti_anul_3.selectedItems():
+            item.setText("")
+            item.setWhatsThis("")
+
+        for item in self.table_miercuri_anul_3.selectedItems():
+            item.setText("")
+            item.setWhatsThis("")
+
+        for item in self.table_joi_anul_3.selectedItems():
+            item.setText("")
+            item.setWhatsThis("")
+
+        for item in self.table_vineri_anul_3.selectedItems():
+            item.setText("")
+            item.setWhatsThis("")
+        # an4
+
+        for item in self.table_luni_anul_4.selectedItems():
+            item.setText("")
+            item.setWhatsThis("")
+
+        for item in self.table_marti_anul_4.selectedItems():
+            item.setText("")
+            item.setWhatsThis("")
+
+        for item in self.table_miercuri_anul_4.selectedItems():
+            item.setText("")
+            item.setWhatsThis("")
+
+        for item in self.table_joi_anul_4.selectedItems():
+            item.setText("")
+            item.setWhatsThis("")
+
+        for item in self.table_vineri_anul_4.selectedItems():
+            item.setText("")
+            item.setWhatsThis("")
 

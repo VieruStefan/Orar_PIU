@@ -85,8 +85,9 @@ class TableWidget(QTableWidget):
 
     def dropEvent(self, e: QtGui.QDropEvent) -> None:
         index = self.indexAt(e.pos())
-        #if self.item(index.row(), index.column()).background() == QColor(0, 100, 20):
-        self.dropMimeData(e.mimeData(), e.dropAction(), index.row(), index.column())
+        if self.item(index.row(), index.column()).background() == QColor(0, 100, 20) and\
+                self.item(index.row()+1, index.column()).background() == QColor(0, 100, 20):
+            self.dropMimeData(e.mimeData(), e.dropAction(), index.row(), index.column())
         e.accept()
         for row in range(self.rowCount()):
             for col in range(self.columnCount()):
